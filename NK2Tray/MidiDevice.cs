@@ -167,6 +167,7 @@ namespace NK2Tray
 
         public void SetCurve(float pow)
         {
+            if (faders == null || faders.Count <= 0) return;
             faders.ForEach(fader => fader.SetCurve(pow));
         }
 
